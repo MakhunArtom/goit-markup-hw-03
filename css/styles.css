@@ -1,0 +1,226 @@
+:root {
+  --headings-color: #212121;
+  --text-color: #757575;
+  --hover-color: #2196f3;
+  --background-color: #2f303a;
+  --hero-address-color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.tdn {
+  text-decoration: none;
+}
+
+.lsn {
+  list-style: none;
+}
+
+/*.................Header ................*/
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  color: var(--hover-color);
+}
+.nav-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--headings-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--hover-color);
+}
+.nav-list .link.current {
+  color: var(--hover-color);
+}
+
+.contacts-list .contacts-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.contacts-list .contacts-item:hover,
+.contacts-list .contacts-item:focus {
+  color: var(--hover-color);
+}
+
+/* .................Hero................... */
+.hero {
+  background-color: var(--background-color);
+}
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: var(--hero-address-color);
+}
+.hero .hero-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--hover-color);
+  color: var(--hero-address-color);
+}
+.hero .hero-button {
+  cursor: pointer;
+}
+
+/*.................. Достоинства.......... */
+.dignity-item .dignity-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--headings-color);
+}
+.dignity-item .dignity-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*.......... Чем мы занимаемся............. */
+.doing .doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--headings-color);
+}
+
+/* ..............Наша команда ................*/
+.command .command-primary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--headings-color);
+}
+
+.command .command-secondary-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--headings-color);
+}
+
+.command .command-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+/* ..................Footer................. */
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer .logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hero-address-color);
+}
+
+.footer .web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+}
+
+.addresses .addresses-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--hero-address-color);
+}
+
+.addresses .addresses-mail,
+.addresses .addresses-tel {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.addresses .addresses-mail:hover,
+.addresses .addresses-mail:focus,
+.addresses .addresses-tel:hover,
+.addresses .addresses-tel:focus {
+  color: var(--hover-color);
+}
+
+/*,,,,,,,,,,, Стили для портфолио,,,,,,,,,, */
+
+/*....... ..........button................ */
+
+.navigator-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--headings-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.navigator-button:hover,
+.navigator-button:focus {
+  background-color: var(--hover-color);
+  color: var(--hero-address-color);
+}
+
+/*............. project................. */
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--headings-color);
+}
+
+.project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
