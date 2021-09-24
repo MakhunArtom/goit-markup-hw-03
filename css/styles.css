@@ -11,6 +11,19 @@ body {
   background-color: #fff;
   color: var(--text-color);
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 
 .tdn {
   text-decoration: none;
@@ -20,26 +33,51 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 /*.................Header ................*/
 
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+.main-header,
+.naviget {
+  display: flex;
+  align-items: center;
 }
-.web {
+
+.naviget .logo {
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--headings-color);
+}
+.naviget .web {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: var(--hover-color);
 }
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-list .link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -54,15 +92,23 @@ body {
   color: var(--hover-color);
 }
 
-.contacts-list .contacts-item {
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-.contacts-list .contacts-item:hover,
-.contacts-list .contacts-item:focus {
+.contacts-item:hover,
+.contacts-item:focus {
   color: var(--hover-color);
 }
 
@@ -71,6 +117,7 @@ body {
   background-color: var(--background-color);
 }
 .hero .hero-title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
@@ -78,8 +125,11 @@ body {
   color: var(--hero-address-color);
 }
 .hero .hero-button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
   font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -92,14 +142,26 @@ body {
 }
 
 /*.................. Достоинства.......... */
-.dignity-item .dignity-title {
+.dignity-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.dignity-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.dignity-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--headings-color);
 }
-.dignity-item .dignity-text {
+.dignity-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -108,15 +170,36 @@ body {
 
 /*.......... Чем мы занимаемся............. */
 .doing .doing-title {
+  margin-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--headings-color);
+}
+.doing-list {
+  padding-bottom: 94px;
+  display: flex;
+}
+.doing-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.doing-img {
+  display: block;
 }
 
 /* ..............Наша команда ................*/
-.command .command-primary-title {
+.command {
+  background-color: #f5f4fa;
+}
+.command-primary-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -124,7 +207,23 @@ body {
   color: var(--headings-color);
 }
 
-.command .command-secondary-title {
+.command-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+.command-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.command-img {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.command-secondary-title {
+  margin-bottom: 10px;
+
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -132,16 +231,30 @@ body {
   color: var(--headings-color);
 }
 
-.command .command-text {
+.command-text {
+  padding-bottom: 30px;
+
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
 
+.border {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 /* ..................Footer................. */
 .footer {
   background-color: var(--background-color);
+}
+.footer-link {
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer .logo {
@@ -161,8 +274,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--hover-color);
 }
+.addresses {
+  padding-bottom: 60px;
+}
 
-.addresses .addresses-text {
+.addresses-text {
+  margin-bottom: 9px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -171,8 +289,12 @@ body {
   color: var(--hero-address-color);
 }
 
-.addresses .addresses-mail,
-.addresses .addresses-tel {
+.mail {
+  margin-bottom: 9px;
+}
+
+.addresses-mail,
+.addresses-tel {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -180,10 +302,10 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.addresses .addresses-mail:hover,
-.addresses .addresses-mail:focus,
-.addresses .addresses-tel:hover,
-.addresses .addresses-tel:focus {
+.addresses-mail:hover,
+.addresses-mail:focus,
+.addresses-tel:hover,
+.addresses-tel:focus {
   color: var(--hover-color);
 }
 
