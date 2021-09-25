@@ -32,9 +32,14 @@ ul {
 .lsn {
   list-style: none;
 }
+.header-border {
+  border: 1px solid #ececec;
+}
 
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -114,10 +119,10 @@ ul {
 
 /* .................Hero................... */
 .hero {
+  text-align: center;
   background-color: var(--background-color);
 }
 .hero .hero-title {
-  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
@@ -125,10 +130,6 @@ ul {
   color: var(--hero-address-color);
 }
 .hero .hero-button {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -313,7 +314,19 @@ ul {
 
 /*....... ..........button................ */
 
+.navigator-list {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.navigator-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .navigator-button {
+  border: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -332,7 +345,37 @@ ul {
 
 /*............. project................. */
 
+.project-list {
+  padding-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.project-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.project-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.project-img {
+  margin-bottom: 20px;
+  display: block;
+}
+
 .project-title {
+  padding-left: 24px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -341,6 +384,9 @@ ul {
 }
 
 .project-text {
+  padding-left: 24px;
+  padding-bottom: 20px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
