@@ -32,10 +32,6 @@ ul {
 .lsn {
   list-style: none;
 }
-.header-border {
-  border: 1px solid #ececec;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -45,6 +41,9 @@ ul {
 
 /*.................Header ................*/
 
+.header {
+  border-bottom: 1px solid #e9e6e6;
+}
 .main-header,
 .naviget {
   display: flex;
@@ -80,8 +79,8 @@ ul {
 
 .nav-list .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   font-size: 14px;
@@ -119,10 +118,15 @@ ul {
 
 /* .................Hero................... */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
   background-color: var(--background-color);
 }
 .hero .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5;
@@ -130,6 +134,11 @@ ul {
   color: var(--hero-address-color);
 }
 .hero .hero-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -143,10 +152,13 @@ ul {
 }
 
 /*.................. Достоинства.......... */
-.dignity-list {
-  display: flex;
+.dignity {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.dignity-list {
+  display: flex;
 }
 
 .dignity-item:not(:last-child) {
@@ -170,7 +182,11 @@ ul {
 }
 
 /*.......... Чем мы занимаемся............. */
-.doing .doing-title {
+.doing {
+  padding-bottom: 94px;
+}
+
+.doing-title {
   margin-bottom: 50px;
 
   text-align: center;
@@ -181,7 +197,6 @@ ul {
   color: var(--headings-color);
 }
 .doing-list {
-  padding-bottom: 94px;
   display: flex;
 }
 .doing-item:not(:last-child) {
@@ -194,10 +209,12 @@ ul {
 
 /* ..............Наша команда ................*/
 .command {
+  padding-bottom: 94px;
+  padding-top: 94px;
+
   background-color: #f5f4fa;
 }
 .command-primary-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 
   text-align: center;
@@ -210,7 +227,6 @@ ul {
 
 .command-list {
   display: flex;
-  padding-bottom: 94px;
 }
 .command-item:not(:last-child) {
   margin-right: 30px;
@@ -251,10 +267,12 @@ ul {
 
 /* ..................Footer................. */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--background-color);
 }
 .footer-link {
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -274,9 +292,6 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hover-color);
-}
-.addresses {
-  padding-bottom: 60px;
 }
 
 .addresses-text {
@@ -314,9 +329,14 @@ ul {
 
 /*....... ..........button................ */
 
-.navigator-list {
+.navigator {
   padding-top: 94px;
-  padding-bottom: 50px;
+  padding-bottom: 94px;
+}
+
+.navigator-list {
+  margin-bottom: 50px;
+
   justify-content: center;
   display: flex;
 }
@@ -326,6 +346,11 @@ ul {
 }
 
 .navigator-button {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+
   border: none;
   font-family: Roboto;
   font-style: normal;
@@ -346,7 +371,6 @@ ul {
 /*............. project................. */
 
 .project-list {
-  padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -368,14 +392,11 @@ ul {
   margin-bottom: 0;
 }
 .project-img {
-  margin-bottom: 20px;
   display: block;
 }
 
 .project-title {
-  padding-left: 24px;
   margin-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -384,11 +405,15 @@ ul {
 }
 
 .project-text {
-  padding-left: 24px;
-  padding-bottom: 20px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+
+.project-pading {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
